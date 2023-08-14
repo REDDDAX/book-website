@@ -21,10 +21,13 @@
           ><i class="fa-solid fa-paper-plane"></i>ILYASS ELKOUN</a
         >
         <ul class="navbar">
-          <li><a href="#">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="">Books</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#" onclick=" 
+         contactPopUp()
+         
+          " class="contact">Contact</a></li>
           <li><a href="" class="order-now">Order Now</a></li>
         </ul>
         <input type="checkbox" name="" id="check" />
@@ -33,15 +36,30 @@
         ></label>
         <div class="dropdown">
           <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="">Books</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#" onclick=" 
+              contactPopUp()">Contact</a></li>
             <li><a href="" class="order-now">Order Now</a></li>
           </ul>
         </div>
       </nav>
     </header>
+    <div class="pop popup-container">
+      
+      <div class=" contact-popup">
+       <i class="fa-solid fa-x" onclick="
+        contactPopUp()
+        "></i>
+<div class="section location"><i class="fa-solid fa-map-location-dot"></i><h3>address</h3><p>15 44 addres</p>
+</div>
+<div class="section email"><i class="fa-solid fa-envelope"></i><h3>email</h3><p>elkounilyass69@gmail.com</p></div>
+<div class="section phone"><i class="fa-solid fa-phone"></i> <h3>phone</h3><p>1547985647</p></div>
+
+</div>
+      
+    </div>
     <main id="home">
       <div id="left">
         <img src="group 2 third.png" alt="" id="circle" />
@@ -66,28 +84,28 @@
     <section id="section1"></section>
     <section id="about">
       <div>
-        <h1>About:</h1>
+        <h1>About</h1>
         <p>
           ilyass elkoun, a distinguished male voice in the realm of literature,
           has carved a niche for himself with his insightful essays and
           thought-provoking prose. Raised in the heart of a bustling metropolis,
           his early fascination with words led him to a lifelong exploration of
           ideas and language. After completing his studies in Philosophy and
-          Literature at a renowned university, Benjamin embarked on a literary
+          Literature at a renowned university, ilyass embarked on a literary
           journey that would cement his reputation as a perceptive observer of
           the human condition. His debut collection of essays, "Echoes of
           Thought," showcased his ability to dissect complex concepts and
           present them in a relatable manner, making philosophy accessible to a
           wider audience. With a writing style marked by its clarity and
-          intellectual depth, Benjamin's essays often delve into subjects
+          intellectual depth, ilyass's essays often delve into subjects
           ranging from existentialism to the intersection of technology and
           society. He has a gift for distilling abstract concepts into poignant
           narratives that resonate with readers from all walks of life. Beyond
-          his literary pursuits, Benjamin finds solace in the tranquility of the
+          his literary pursuits, ilyass finds solace in the tranquility of the
           natural world. His passion for hiking and exploring the great outdoors
           frequently informs his writing, infusing it with a sense of wonder and
           reverence for the world around us. As an accomplished essayist,
-          Benjamin Thompson continues to inspire readers to contemplate the
+          ilyass elkoun continues to inspire readers to contemplate the
           intricacies of existence and to question the prevailing norms of
           society. His words have the power to spark conversations, challenge
           assumptions, and ignite intellectual curiosity, ensuring his place as
@@ -95,8 +113,18 @@
         </p>
       </div>
     </section>
-    <section id="my-books">
-
+    <section id="books">
+      <h1>Books</h1>
+      <div class="books-container">
+   <div class="book"><img src="books/Untitled-2_0000_01---Free.png.png" alt="black water book"></div>   
+<div class="book"><img src="books/Untitled-2_0004_Untitled-1_0003_01---Freeh.png.png.png" alt="destiny book"></div>
+<div class="book"><img src="books/Untitled-2_0001_Untitled-1_0000_Layer-1.png.png" alt="the galaxy glory book"></div>
+<div class="book"><img src="books/Untitled-2_0002_Untitled-1_0001_01---Freed.png.png.png" alt="turn the lights off book"></div>
+<div class="book"><img src="books/Untitled-2_0003_Untitled-1_0002_01---Freef.png.png.png" alt="stop thinking negative book"></div>
+<div class="book"><img src="books/Untitled-2_0005_Untitled-1_0004_01---Freeq.png.png.png" alt="mysterious neighbor book"></div>
+</div>
     </section>
+    
+    <script src="script.js"></script>
   </body>
 </html>

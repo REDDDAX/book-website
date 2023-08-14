@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     font-family: 'League Spartan', sans-serif;
+    max-width: 2500px;
 }
 html{
     scroll-behavior:smooth;
-   
+    max-width: 2500px;
 }
 ::-webkit-scrollbar {
     width: 15px;
@@ -80,6 +81,90 @@ a.order-now:hover{
     border: 2px #F9CF02 solid;
     box-sizing: border-box;
 }
+div.popup-container{
+    background-color: rgba(0, 0, 0, 0.319);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+   scale: 0;
+}
+.pop.active{
+    scale: 1;
+   
+}
+.contact-popup{
+    height: 500px;
+    width: 60%;
+    
+    background-color: white;
+    border-radius: 10px;
+    
+    position: relative;
+    
+   display: flex;
+  
+   gap: 2px;
+    z-index: 99;
+}
+div.section{
+    
+    width: 100%;
+    color:#144C81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+.fa-x{
+    font-size: 20px;
+    color: #144C81;
+    order: 2;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    /*color: #144C81;
+    font-size: 20px;
+    height: 20px;
+position: absolute;
+left: 97%;
+top: 1.5%;*/
+}
+.fa-x:hover{
+    color:#3f75a7 ;
+    cursor: pointer;
+}
+div.section i{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.location, .email, .phone{
+    display: flex;
+    flex-direction: column;
+}
+div.section p{
+    padding-top: 30px;
+    font-size: 20px;
+    color: #525050;
+    padding-bottom: 10px;
+}
+
+
+   
+
+
+
+
+
+
+
+
+
 main{
     padding-top: 100px;
  display: flex;  
@@ -180,10 +265,31 @@ section#about p{
    
    
 }
-section#my-books{
-    background-color: red;
-    height: 100vh;
+#books h1{
+    font-size: 40px;
+    color: #144C81;
+    font-weight: 500;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+div.books-container{
+    
+    height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+div.book{
+    /*box-shadow: -20px -20px 20px 10px;*/
+    filter: drop-shadow(31px 32px 14px #525050);
+    
+    margin: 20px;
 }
 
 
@@ -217,6 +323,12 @@ section#my-books{
       
        
     }
+    #my-books h1{
+        font-size: 40px;
+        color: #144C81;
+        font-weight: 500;
+        margin-left: 100px;
+    }
 }
 
 
@@ -236,6 +348,20 @@ section#my-books{
         margin-right: 70px;
         border: 2px #F9CF02 solid;
         
+        }
+        .contact-popup{
+            height: 500px;
+            width: 60%;
+            background-color: white;
+            border-radius: 10px;
+            
+            
+            flex-direction: column;
+            padding: 40px 0 40px 0;
+           display: flex;
+          
+           gap: 2px;
+            z-index: 99;
         }
         div#right h1{
             color: #144C81;
@@ -269,6 +395,12 @@ section#my-books{
           
            
         }
+        #books h1{
+            font-size: 40px;
+            color: #144C81;
+            font-weight: 500;
+            margin-left: 100px;
+        }
 }
 /*tablets 2*/
 @media only screen and (max-width: 987px){
@@ -301,7 +433,12 @@ section#my-books{
            
         }
         
-        
+        #books h1{
+            font-size: 40px;
+            color: #144C81;
+            font-weight: 500;
+            margin-left: 30px;
+        }
         
 }
 @media only screen and (max-width: 930px){
@@ -421,6 +558,12 @@ section#my-books{
         color: #545050;
       padding-bottom: 50px;
        
+    }
+    #books h1{
+        font-size: 30px;
+        color: #144C81;
+        font-weight: 500;
+        margin-left: 10px;
     }
 }
 /*phones*/
