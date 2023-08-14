@@ -91,6 +91,7 @@ div.popup-container{
     position: fixed;
     z-index: 99;
    scale: 0;
+   
 }
 .pop.active{
     scale: 1;
@@ -109,6 +110,7 @@ div.popup-container{
   
    gap: 2px;
     z-index: 99;
+    
 }
 div.section{
     
@@ -168,6 +170,7 @@ div.section p{
 main{
     padding-top: 100px;
  display: flex;  
+ 
 }
 img#circle{
     position: relative;
@@ -351,7 +354,7 @@ div.book{
         }
         .contact-popup{
             height: 500px;
-            width: 60%;
+            width: 80%;
             background-color: white;
             border-radius: 10px;
             
@@ -513,7 +516,7 @@ div.book{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #144C81;
+        background-color: #144c81d6;
     }
     #check:checked ~ .dropdown{
         left: 0;
@@ -707,7 +710,7 @@ background-color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #144C81;
+                background-color: #144c81d6;
             }
             a#hero{
                 padding-left: 20px;
@@ -732,7 +735,7 @@ background-color: white;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background-color: #144C81;
+                        background-color: #144c81d6;
                     }
                     nav .check{
                         display: block;
